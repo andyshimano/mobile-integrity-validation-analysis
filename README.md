@@ -163,8 +163,11 @@ This represents a design flaw rather than an implementation bug.
 
 The implemented integrity mechanism does not provide sufficient protection against request tampering.
 
-This case demonstrates how partial cryptographic validation leads to exploitable weaknesses even when strong primitives (SHA-256)
-are used incorrectly.
+This case demonstrates how partial cryptographic validation leads to exploitable weaknesses even when strong
+primitives (SHA-256) are used incorrectly. 
+
+Importantly, this vulnerability is architectural in nature and cannot be mitigated solely by strengthening
+client-side protections.
 
 ---
 
@@ -180,5 +183,3 @@ are used incorrectly.
 ## Disclaimer
 
 This analysis was performed in a controlled lab environment for educational and research purposes only.
-The project simulates a client-server interaction and demonstrates weaknesses in request integrity
-validation logic, particularly when validation depends on insufficient or partially verified data.
